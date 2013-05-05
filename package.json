@@ -1,10 +1,9 @@
 { "name": "convention"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "author": "Nick Niemeir <nick.niemeir@gmail.com> (http://nrn.io)"
 , "description": "Convert from err, success cbs to a single (err, results) cb, and back."
 , "keywords": [ "convention", "error", "results", "callback" ]
-, "main": "convention.js"
-, "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
+, "scripts": { "test": "node test.js" }
 , "dependencies": { "pasta": "*" }
 , "devDependencies": { "tape": "*" }
 , "engines": { "node": ">0.6" }

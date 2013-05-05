@@ -1,5 +1,5 @@
 var test = require('tape')
-  , c = require('../convention')
+  , c = require('./index.js')
 
 test('conventions', function (t) {
   var unwrap = c.unwrap(function (e, res) { if (e) t.equal(e, 1); if (res) t.equal(res, 2);})
