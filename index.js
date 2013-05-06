@@ -1,4 +1,9 @@
+// convention, (c) 2013 Nick Niemeir <nick.niemeir@gmail.com>
+// MIT licensed. https://github.com/nrn/convention
+
 var p = require('pasta')()
+
+module.exports = { wrap: wrap, unwrap: unwrap }
 
 function wrap (efn, resfn) {
   // Provide an error function so this doesn't happen to you.
@@ -24,6 +29,4 @@ function unwrap (fn) {
 
   return { error: error, success: success}
 }
-
-module.exports = { wrap: wrap, unwrap: unwrap }
 

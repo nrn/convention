@@ -4,6 +4,8 @@ Module to wrap/unwrap functions in the node (err, results) convention.
 
 `var convention = require('convention')`
 
+[![browser support](https://ci.testling.com/nrn/convention.png)](https://ci.testling.com/nrn/convention)
+
 ##convention.wrap(errorHandler, successHandler)
 
 Takes two functions, one to handle errors, the other results, and
