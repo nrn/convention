@@ -2,17 +2,17 @@
 
 Module to wrap/unwrap functions in the node (err, results) convention.
 
-`var c = require('convention')`
+`var convention = require('convention')`
 
-##c.wrap(errorHandler, successHandler)
+##convention.wrap(errorHandler, successHandler)
 
-takes two functions, one to handle errors, the other results, and
+Takes two functions, one to handle errors, the other results, and
 returns them combined.
 
-##c.unwrap(nodeFn)
+##convention.unwrap(nodeFn)
 
 Takes a node style function, and returns an object with an
-e property for the errorHandler and an s property for the
+error property for the errorHandler and an success property for the
 successHandler.
 
 ##License (MIT)

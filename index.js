@@ -13,16 +13,16 @@ function wrap (efn, resfn) {
 
 function unwrap (fn) {
 
-  function e (err) {
+  function error (err) {
     return fn.call(this, err)
   }
 
-  function s () {
+  function success () {
     var args = [null].concat(p.arrify(arguments))
     return fn.apply(this, args)
   }
 
-  return { e: e, s: s}
+  return { error: error, success: success}
 }
 
 module.exports = { wrap: wrap, unwrap: unwrap }
